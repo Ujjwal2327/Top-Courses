@@ -25,7 +25,7 @@ const Cards = ({courses, category})=>{
     return (
         <div>
             {
-                courses.length==0 ?
+                courses.length===0 ?
                 (
                     <div className=" flex flex-wrap justify-center gap-4 mb-4 align-middle " >
                         No Data Found

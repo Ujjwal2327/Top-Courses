@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {FcLike} from "react-icons/fc"
 import {FcLikePlaceholder} from "react-icons/fc"
 import { toast } from "react-toastify";
@@ -15,7 +14,7 @@ const Card = (props)=>{
             toast.warning("Liked Removed");
         }
         else{
-            if(likedCourses.length==0){
+            if(likedCourses.length===0){
                 setLikedCourses([course.id]);
             }
             else{
